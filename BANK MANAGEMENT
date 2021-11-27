@@ -1,0 +1,122 @@
+#include<iostream.h>
+#include<conio.h>
+#include<string.h>
+void main()
+{
+  long account,phone;
+  char name[10];
+  char mail[20];
+  char admin,z;
+  long a=200000,b,c;
+  int bank;
+  clrscr();
+  cout<<"|-----------------------------------------------------------------------------------------------------------|\n";
+  cout<<"  |\t\t\t\t\t\t\t\t\t    |\n";
+  cout<<"|\t\t\t BANK MANAGEMENT t\t\t    |\n";
+  cout<<"  |\t\t\t-------------------------------------------------------------------------------------\t\t\t|\n";
+  cout<<"|\t\t\t\t\t\t\t\t\t     |\n";
+  cout<<"|\t\t\t\t\t\t\t\t\t     |\n";
+  cout<<"|\t\t\t\t\t\t\t\t\t     |\n";
+  cout<<"  |\t\t\t Design N program by:-  \t\t\t|\n";
+  cout<<"|\t\t\t----------------------------------------------------------------------------------------\t\t\t|\n";
+  cout<<"  |\t\t\t\t\t\t\t\t\t       |\n";
+  cout<<"|\t\t\t\t\t\t\t\t\t        |\n";
+  cout<<"|\t\t\t\t\t\t\t\t\t        |\n";
+  cout<<"|\t\t\t\t\t\t\t\t\t        |\n";
+  cout<<"  |\t\t\t\t\t\t\t\t\t       |\n";
+  cout<<"|\t\t\t VISHAL \t\t\t      |\n";
+  cout<<"|\t\t\t\t\t\t\t\t\t        |\n";
+  cout<<"|\t\t\t\t\t\t\t\t\t        |\n";
+  cout<<"|\t\t\t\t\t\t\t\t\t        |\n";
+  cout<<"  |\t\t\t\t\t\t\t\t\t        |\n";
+  cout<<"|\t\t\t\t\t\t\t\t\t        |\n";
+  cout<<"|\t\t\t Press any key N Enter to move on ...\t|\n";
+  cout<<"  |\t\t\t\t\t\t\t\t\t         |\n";
+  cout<<"|------------------------------------------------------------------------------------------------------------|\n";
+  cin>>z;
+  clrscr();
+  cout<<"\n\n\n\n\n\n\n\n\n";
+  cout<<"|-------------------------------------------------------------------------------------------------------------|\n";
+  cout<<"  |\t\t\t\t\t\t\t\t\t     |\n";
+  cout<<"    |\t\t\t\t\t\t\t\t\t     |\n";
+  cout<<"      | Press[A] to login as ADMINISTRATOR or [S] to login as STAFF \n";
+  cout<<"    |\t\t\t\t\t\t\t\t\t     |\n";
+  cout<<"  |\t\t\t\t\t\t\t\t\t     |\n";
+  cout<<"|------------------------------------------------------------------------------------------------------------|\n";
+  cin>>admin;
+  clrscr();
+  switch(admin)
+  {
+    case 'a':
+  cout<<"|------------------------------------------------------------------------------------------------------------|\n";
+  cout<<"  |\t\t\t\t\t\t\t\t\t     |\n";
+  cout<<"    |\t\t\t\t\t\t\t\t\t     |\n";
+  cout<<"      |\t\t\t Welcome as ADMINISTRATOR:-\t\t    |\n";
+  cout<<"    |\t\t\t\t\t\t\t\t\t     |\n";
+  cout<<"  |\t\t\t\t\t\t\t\t\t     |\n";
+  cout<<"|-------------------------------------------------------------------------------------------------------------|\n";
+  break;
+    case's':
+  cout<<"|-------------------------------------------------------------------------------------------------------------|\n";
+  cout<<"  |\t\t\t\t\t\t\t\t\t    |\n";
+  cout<<"    |\t\t\t\t\t\t\t\t\t   |\n";
+  cout<<"      |\t\t\t Welcome as STAFF:- \t\t\t    |\n";
+  cout<<"    |\t\t\t\t\t\t\t\t\t   |\n";
+  cout<<"  |\t\t\t\t\t\t\t\t\t    |\n";
+  cout<<"|--------------------------------------------------------------------------------------------------------------|\n";
+  cout<<"\n Enter the name of the staff:-\t";
+  cin>>account;
+  cout<<"\n Enter the phone number of staff:-\t";
+  cin>>phone;
+  cout<<"\n Enter the E-mail Id of staff:-\t";
+  cin>>mail;
+  break;
+  default:
+    cout<<"Invalid input....";
+    break;
+ }
+clrscr();
+   cout<<"\n|--------------------------------------------------------------------------------------------------------------|";
+   cout<<"\nName:-"<<name;
+   cout<<"\nAccount:-"<<account;
+   cout<<"\nPhone:-"<<phone;
+   cout<<"\nE-mail:-"<<mail;
+   cout<<"\n|---------------------------------------------------------------------------------------------------------------|";
+   cout<<"\n\n\n\t\t\t Press[1] to Deposit the money:\n";
+   cout<<"\n\t\\t\t Press[2] to Transfer the money:\n";
+   cout<<"\n\t\t\t Press[3] to Withdraw the money:\n\t\t\t\t\t";
+   cin>>bank;
+switch(bank)
+{
+   case 1:
+      cout<<"\n\n Deposit the money:\t";
+      cin>>b;
+      cout<<"\n Your actual amount is:\t"<<a;
+      c=a+b;
+      cout<<"\n\n Congrats your amount has been deposited:\n";
+      cout<<"\n Account balance is:\t"<<c;
+      break;
+   case 2:
+      cout<<"\n\n Transfer the oney:\t";
+      cin>>b;
+      cout<<"\n\n congrats your amount has been Transfer:\n";
+      cout<<"\n Account balance is:\t"<<c;
+      break;
+   case 3:
+      cout<<"\n\n Withdrawal the money:\t";
+      cin>>b;
+      cout<<"\n your actual amount is:\t"<<a;
+      c=a-b;
+      cout<<"\n\n Congrats your amount has been withdrawal:\n";
+      cout<<"\n Account balance is:\t"<<c
+      break;
+      default:
+        cout<<"\n Invalid input....";
+        break;
+ }
+ getch();
+ }
+      
+   
+    
+  
